@@ -92,5 +92,16 @@ public class Constant2 {
             System.out.println(sc.nextLine());
         }
 
+        int i = 10;
+        while(i > 0){
+            System.out.println("Counting down..." + i);
+            i--;
+        }
+        for (int j = 10; j > 0; j--) {
+            System.out.println("Counting down..." + j);
+        }
+
+        int[] a1 = new int[100];
+
     }
 }
