@@ -3,13 +3,13 @@ package chapter_four;
 
 import java.util.Random;
 
-public class Employee {
+public class Employee implements Test{
 
     private static int nextId = 1;
 
-    private String name = "";
+    private String name;
     private double salary;
-    private final int id;
+    private int id;
 
     static {
         var generator = new Random();
@@ -29,6 +29,12 @@ public class Employee {
     }
     public Employee(){
 
+    }
+
+    public Employee(String name, double salary, int id) {
+        this.name = name;
+        this.salary = salary;
+        this.id = id;
     }
     public String getName(){
         return name;
